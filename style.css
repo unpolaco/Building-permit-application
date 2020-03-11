@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+  margin: auto;
+  padding: 30px;
+  width: 1000px;
+  border: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 20px 0 ;
+}
+
+ol > li {
+  margin: 25px 0;
+}
+p {
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 25px;
+}
+
+input {
+  
+  margin: 15px 15px 10px 0;
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #a5b1c2;
+}
+input[type="checkbox"] {
+  margin: 0 5px 0 0;
+  height: 30px;
+  width: 15px;
+  vertical-align: middle;
+  border: 1px solid red;
+  color: green;
+}
+
+label {
+  vertical-align: middle;
+  line-height: 25px;
+  display: inline-block;
+}
+button {
+  margin: 15px 15px 10px 0;
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  background-color: #ecf0f1;
+  border: 1px solid #a5b1c2;
+}
+button:hover {
+  background-color:#4b7bec;
+  color: #ecf0f1;
+}
+form {
+padding: 0 15px;
+}
+.long {
+  width: 818px;
+}
+.short {
+  width: 121px;
+}
+.center {
+  text-align: center;
+}
+.explanation {
+  white-space: pre;
+}
+::placeholder {
+  color: #a5b1c2;
+}
+
+fieldset {
+  position: relative;
+  border: none;
+  display: inline;
+}
+input:focus {
+  outline: none;
+}
+
+.animatedLabel {
+  position: absolute;
+  top: 17px;
+  left: 5px;
+  color: #bdc3c7;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+input:focus ~ .animatedLabel
+/* input:valid ~ .animatedLabel  */
+{
+  top: -5px;
+  left: 5px;
+  font-size: 0.85em;
+  color: #4b7bec;
+}
