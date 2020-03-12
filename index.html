@@ -124,11 +124,13 @@
 
       <li><b>Proszę wpisać nazwę planowanej inwestycji (zamierzenia budowlanego)1):</b>
         <p>(w przypadku konieczności podania większej liczby nieruchomości, kliknij przycisk poniżej)</p>
-        <fieldset>
-          <input class="long" type="text" name="projectName" required>
-          <label class="animatedLabel" for="projectName">nazwa inwestycji</label>
-        </fieldset>
-        <button>Dodaj kolejną nieruchomość</button>
+        <form>
+          <fieldset>
+            <input class="long" type="text" name="projectName" required>
+            <label class="animatedLabel" for="projectName">nazwa inwestycji</label>
+          </fieldset>
+          <button>Dodaj kolejną nieruchomość</button>
+        </form>
       </li>
 
       <li><b>Proszę wpisać dane planowanej inwestycji (zamierzenia budowlanego):</b>
@@ -187,18 +189,34 @@
             <input type="text" name="attachment" required>
             <label class="animatedLabel" for="attachment">nazwa załącznika</label>
           </fieldset><br>
+          <button>Dodaj kolejny załącznik</button><br>
         </form>
-        <button>Dodaj kolejny załącznik</button><br>
+        <form>
+          <input type="text" placeholder="podpis">
+          <p>Data oraz czytelny podpis inwestora lub osoby upoważnionej do działania w jego imieniu (w przypadku składania
+            wniosku przez kilku inwestorów lub osób upoważnionych podpis składa każda z nich)</p>
+          <button>Wyślij</button>
+        </form>
 
-        <input type="text" placeholder="podpis">
-        <p>Data oraz czytelny podpis inwestora lub osoby upoważnionej do działania w jego imieniu (w przypadku składania
-          wniosku przez kilku inwestorów lub osób upoważnionych podpis składa każda z nich)</p>
-        <button>Wyślij</button>
+        <form class="official">
+          <p>Wypełnia organ administracyjny</p>
+          <fieldset>
+            <input type="text" name="requestDate">
+            <label class="animatedLabel" for="requestDate">data wpływu wniosku</label>
+          </fieldset>
+          <fieldset>
+            <input type="text" name="registrationNumber">
+            <label class="animatedLabel" for="registrationNumber">nr rejestru</label>
+          </fieldset>
+          <fieldset>
+            <input type="text" name="officialName">
+            <label class="animatedLabel" for="officialName">imię i nazwisko osoby przyjmującej wniosek</label>
+          </fieldset>
+        </form>
 
         <p>Informacja dotycząca załączników</p>
         <div class="explanation">
-          I. Zgodnie z art. 33 ust. 2 ustawy z dnia 7 lipca 1994 r. – Prawo budowlane do wniosku o pozwolenie na budowę
-          należy dołączyć:
+          I. Zgodnie z art. 33 ust. 2 ustawy z dnia 7 lipca 1994 r. – Prawo budowlane do wniosku o pozwolenie na budowę należy dołączyć:
           1) cztery egzemplarze projektu budowlanego wraz z opiniami, uzgodnieniami, pozwoleniami i innymi dokumentami
           wymaganymi przepisami szczególnymi
           oraz zaświadczeniem, o którym mowa w art. 12 ust. 7 (zaświadczenie o wpisie na listę członków właściwej izby
@@ -275,9 +293,6 @@
           6) w zależności od potrzeb, projekt rozbiórki obiektu.
           IV. Obowiązek dołączenia załączników może wynikać również z przepisów odrębnych.
         </div>
-
-
         </div>
 </body>
-
 </html>
